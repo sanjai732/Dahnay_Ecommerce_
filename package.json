@@ -1,0 +1,19 @@
+{
+	"name": "dahnay-ecommerce",
+	"version": "1.0.0",
+	"description": "Playwright Test",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx playwright test"
+	},
+	"keywords": [],
+	"author": "Sanjai",
+	"license": "ISC",
+	"dependencies": {
+		"prettier": "^3.6.2"
+	},
+	"devDependencies": {
+		"@playwright/test": "^1.54.2",
+		"@types/node": "^24.3.0"
+	}
+}
