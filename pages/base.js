@@ -16,18 +16,12 @@ class BasePage {
 	async url() {
 		return await this.page.url()
 	}
-	async wait() {
-		return await this.page.waitForTimeout(10000)
-	}
-
 	async waitForPageLoad() {
 		return await this.page.waitForLoadState('domcontentloaded')
 	}
-
 	async waitAndClick(selector) {
 		return await this.page.click(selector)
 	}
-
 	async waitAndHardClick(selector) {
 		return await this.page.click(selector, { force: true })
 	}
@@ -63,9 +57,9 @@ class BasePage {
 
 	async selectValueFromDropdown(selector, text) {
 		const dropdown = await this.page.locator(selector)
-		return await dropdown.selectOption({ value: text })
+		return await dropdown.selectOption({ value: text }) // value means value || label means visible text || index means index
 	}
-	
+
 	async verifyElementAttribute(selector, attribute, value) {
 		const textValue = await this.page.getAttribute(selector, attribute)
 		return expect(textValue.trim()).toBe(value)

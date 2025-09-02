@@ -1,7 +1,7 @@
 import { defineConfig, devices } from '@playwright/test'
 
 export default defineConfig({
-	testMatch: ['tests/TC_01_Login_authentication.js'],
+	testMatch: ['tests/TC_Registration.js'],
 	fullyParallel: !true,
 	timeout: 5000,
 	forbidOnly: !!process.env.CI,

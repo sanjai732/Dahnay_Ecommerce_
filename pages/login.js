@@ -1,17 +1,17 @@
-import basePage from "../pages/base"
-import { emailID,dropdown,password,loginButton} from "../pageobject/landingPage"
-import { baseURL,login_dropdown,Password,username } from "../config"
+import BasePage from "../pages/base.js"
+import { emailID,password,loginButton,dropDown} from "../pageobject/landingPage.js"
+import { baseURL,login_customer,Password,username } from "../config"
 
-class LoginPage extends basePage{
+class LoginPage extends BasePage{
 	constructor(page){
-		super (page)
+		super(page)
 	}
 	async OpenApp(){
-		await super.open(baseURL)
-		return await super.waitForPageLoad()
+		await this.open(baseURL)
+		return this.waitForPageLoad()
 	}
 	async authentication(){
-		//await this.selectValueFromDropdown(dropdown,login_dropdown)
+		await this.selectValueFromDropdown(dropDown,login_customer)
 		await this.waitAndFill(emailID, username)
 		await this.waitAndFill(password, Password)
 		await this.waitAndClick(loginButton)
