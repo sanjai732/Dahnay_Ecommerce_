@@ -1,11 +1,15 @@
 {
-	"email": "sanjai.s@allmasters.ai",
-	"password": "sanjai@777",
+	"email": "sanjai@allmasters.ai",
+	"pass": "sanjai@777",
+	"minimum_password":"san",
+	"maximum_password":"thegreatness@103849",
+	"invalidEmailFormat":"NotAnEmail",
+	"spaceData":"     ",
 	"registerName":"DahNay",
 	"registerDesignation":"it",
 	"registerMobileCode":"+91",
 	"registerMobileNumber":"7556783748",
-	"registerEmail":"tamilkumaran@doko.com",
+	"registerEmail":"kalaiselvan@doko.com",
 	"registerPassword":"Doko@2025",
 	"registerDifferentPassword":"Doko@2026"
 }

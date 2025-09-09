@@ -10,6 +10,9 @@ class BasePage {
 	async title() {
 		return await this.page.title()
 	}
+	async refresh(){
+		return await this.page.reload()
+	}
 	async pause() {
 		return await this.page.pause()
 	}
@@ -51,7 +54,7 @@ class BasePage {
 	}
 
 	async verifyJSElementValue(selector, text) {
-		const textValue = await this.page.$eval(selector, element => element.value)
+		const textValue = await this.page.locator(selector, element => element.value)
 		return expect(textValue.trim()).toBe(text)
 	}
 
@@ -100,10 +103,9 @@ class BasePage {
 	}
 
 	async isElementVisible(selector, errorMessage) {
-		const element = this.page.locator(selector)
+		//const element = await this.page.waitForSelector(selector,{state:'visible',timeout:3000})
 		try {
-			const isVisible = await element.isVisible()
-			expect(isVisible).toBeTruthy()
+			await expect(this.page.locator(selector)).toBeVisible({timeout:3000})
 		} catch (error) {
 			throw new Error(`${errorMessage}`)
 		}

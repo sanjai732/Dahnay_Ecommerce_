@@ -4,12 +4,15 @@
 	"description": "Playwright Test",
 	"main": "index.js",
 	"scripts": {
-		"test": "npx playwright test"
+		"test": "npx playwright test",
+		"test:login":"npx playwright test TC_01_Login_authentication.spec.js --project=Chrome",
+		"test:chrome": "npx playwright test --project=Chrome"
 	},
 	"keywords": [],
 	"author": "Sanjai",
 	"license": "ISC",
 	"dependencies": {
+		"mongodb": "^6.19.0",
 		"prettier": "^3.6.2"
 	},
 	"devDependencies": {

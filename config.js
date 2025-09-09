@@ -1,5 +1,6 @@
 export const baseURL= "http://qa.ams.ai/login";
-export const username = "sanjai.s@allmasters.ai";
+export const username = "sanjai.san@allmasters.ai";
+export const dum_username = "sanjai.s@allmasters.ai";
 export const Password = "Doko@2023";
 export const loginDropdown_Customer = "I am a Customer";
 export const loginDropdown_Admin = "I am an Administrator";
