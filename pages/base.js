@@ -10,7 +10,7 @@ class BasePage {
 	async title() {
 		return await this.page.title()
 	}
-	async refresh(){
+	async refresh() {
 		return await this.page.reload()
 	}
 	async pause() {
@@ -22,8 +22,11 @@ class BasePage {
 	async waitForPageLoad() {
 		return await this.page.waitForLoadState('domcontentloaded')
 	}
+	async waitAndClear(selector) {
+		return await this.page.locator(selector).nth(0).clear()
+	}
 	async waitAndClick(selector) {
-		return await this.page.click(selector)
+		return await this.page.locator(selector).nth(0).click()
 	}
 	async waitAndHardClick(selector) {
 		return await this.page.click(selector, { force: true })
@@ -48,9 +51,10 @@ class BasePage {
 		return expect(textValue.trim()).toBe(text)
 	}
 
-	async verifyElementContainsText(selector, text) {
+	async verifyElementContainsText(selector, text1, text2) {
 		const locatorText = await this.page.locator(selector)
-		return await expect(locatorText).toContainText(text)
+		await expect(locatorText).toContainText(text1)
+		return await expect(locatorText).toContainText(text2)
 	}
 
 	async verifyJSElementValue(selector, text) {
@@ -103,9 +107,8 @@ class BasePage {
 	}
 
 	async isElementVisible(selector, errorMessage) {
-		//const element = await this.page.waitForSelector(selector,{state:'visible',timeout:3000})
 		try {
-			await expect(this.page.locator(selector)).toBeVisible({timeout:3000})
+			await expect(this.page.locator(selector)).toBeVisible({ timeout: 3000 })
 		} catch (error) {
 			throw new Error(`${errorMessage}`)
 		}
@@ -135,6 +138,51 @@ class BasePage {
 			throw new Error(`${errorMessage}`)
 		}
 	}
-}
+	async validatePerField(selector, cases) {
+		for (const testcase of cases) {
+			await this.page.fill(selector, testcase.input)
+			await this.page.keyboard.press('Tab')
+			if (testcase.message !== "") {
+				await expect(this.page.locator(testcase.message)).toBeVisible()
+			}
+			else {
+				await expect(this.page.locator(selector)).toHaveValue(testcase.input)
+			}
+		}
+	}
 
+	async multiWindowTermsAndCondition(selector, txt, value) {
+		const [newPage] = await Promise.all([
+			this.page.waitForEvent('popup'),
+			this.page.click(selector)
+		])
+		await newPage.waitForLoadState()
+		expect(txt).toContain(value)
+		await newPage.close()
+	}
+
+	async validateInputFiles(selector, document) {
+		for (const doc of document) {
+			await this.page.locator(selector).setInputFiles(doc.path)
+			await expect(this.page.locator(doc.validation)).toBeVisible()
+		}
+
+	}
+
+	async uploadFile(selector, document) {
+		await this.page.locator(selector).setInputFiles(document)
+	}
+
+	async handleSessionConflict(selector, selector1) {
+		const popup = await this.page.locator(selector)
+		const yesButton = await this.page.locator(selector1)
+		if (popup.isVisible({ timeout: 3000 }).catch(() => false)) {
+			console.log("session conflict detected")
+			await yesButton.click()
+		}
+		else{
+			console.log("No session conflict")
+		}
+	}
+}
 export default BasePage

@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "npx playwright test",
-		"test:login":"npx playwright test TC_01_Login_authentication.spec.js --project=Chrome",
+		"test:login": "npx playwright test --grep \"@login\" --project=chrome",
+		"test:personalregister": "npx playwright test --grep \"@personalregister\" --project=chrome",
+		"test:kycregister": "npx playwright test --grep \"@kycregister\" --project=chrome",
 		"test:chrome": "npx playwright test --project=Chrome"
 	},
 	"keywords": [],

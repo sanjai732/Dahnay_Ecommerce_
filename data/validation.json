@@ -1,0 +1,188 @@
+{
+    "fullName":[
+        {"input":"  ","message":"//p[text()='Full Name is required']"},
+        {"input":"$%^$^&$%&","message":"//p[text()='Only alphabets are allowed']"},
+        {"input":"395238753","message":"//p[text()='Only alphabets are allowed']"},
+        {"input":"Branded Company","message":""} 
+    ],
+    "phoneCode":[
+        {"input":"  ","message":"//p[text()='Mobile Number is required']"},
+        {"input":"32848934","message":"//p[text()='Mobile Number format is not correct']"}, 
+        {"input":"32848933224","message":"//p[text()='Mobile Number format is not correct']"} 
+    ],
+    "email":[
+        {"input":"test@example.com","message":""},
+        {"input":"user.name@domain.co","message":""},
+        {"input":"user_name@domain.org","message":""},
+        {"input":"my-email123@sub.domain.com","message":""},
+        {"input":"  ","message":"//p[text()='Email is required']"},
+        {"input":"32423432","message":"//p[text()='Enter valid email address']"},
+        {"input":"SDFDFSD","message":"//p[text()='Enter valid email address']"},
+        {"input":"#$%@#%","message":"//p[text()='Enter valid email address']"},
+        {"input":"abc@","message":"//p[text()='Enter valid email address']"},
+        {"input":"@gmail.com","message":"//p[text()='Enter valid email address']"},
+        {"input":"abc@gmail","message":"//p[text()='Enter your official email']"},
+        {"input":"abc@.com","message":"//p[text()='Enter valid email address']"},
+        {"input":"abc@domain,com","message":"//p[text()='Enter valid email address']"},
+        {"input":"abc@domain..com","message":"//p[text()='Enter valid email address']"},
+        {"input":"abc@@domain.com","message":"//p[text()='Enter valid email address']"},
+        {"input":"abc@domain.c","message":"//p[text()='Enter your official email']"},
+        {"input":"abc@domain.123","message":"//p[text()='Enter your official email']"}
+    ],
+    "password":[
+        {"input":"  ","message":"//p[text()='Password is required']"},
+        {"input":"$%^$^&$%&","message":"//p[text()='Invalid Password format']"},
+        {"input":"sdfsdvsdv","message":"//p[text()='Invalid Password format']"},
+        {"input":"32848934","message":"//p[text()='Invalid Password format']"},
+        {"input":"213$#$","message":"//p[text()='Invalid Password format']"},
+        {"input":"asd2312","message":"//p[text()='Invalid Password format']"},
+        {"input":"ghj$#$","message":"//p[text()='Invalid Password format']"},
+        {"input":"asd2312","message":"//p[text()='Invalid Password format']"},
+        {"input":"Doko@2026","message":""}
+    ],
+    "confirmPassword":[
+        {"input":"$%^$^&$%&","message":"//p[text()='Password does not match']"},
+        {"input":"sdfsdvsdv","message":"//p[text()='Password does not match']"},
+        {"input":"32848934","message":"//p[text()='Password does not match']"},
+        {"input":"213$#$","message":"//p[text()='Password does not match']"},
+        {"input":"asd2312","message":"//p[text()='Password does not match']"},
+        {"input":"ghj$#$","message":"//p[text()='Password does not match']"},
+        {"input":"asd2312","message":"//p[text()='Password does not match']"},
+        {"input":"Doko@2026","message":""}
+    ],
+    "confirmPasswordRequired":"//p[text()='Confirm Password is required']",
+    "TermsAndConditionLink":"//strong[text()='Terms and Conditions']",
+    "companyName":[
+        {"input":"","message":"//p[text()='Legal Entity Name is required']"},
+        {"input":"   ","message":"//p[text()='Legal Entity Name is required']"},
+        {"input":"234235352","message":""},
+        {"input":"@#%@#%@%35","message":""},
+        {"input":"one","message":""},
+        {"input":"random company","message":""}
+    ],
+    "state":"//p[text()='State is required']",
+    "city":"//p[text()='City is required']",
+    "gst":[
+        {"input":"","message":"//p[text()='GST is required']"},
+        {"input":"33PLMNO9876Z1Z2","message":"//p[text()='Please Upload GST File']"},
+        {"input":"22ABCDE1234F1Z","message":"//p[text()='Please enter a valid GST']"},
+        {"input":"22ABC12345F1Z5","message":"//p[text()='Please enter a valid GST']"},
+        {"input":"22ABCDE1234F1A5","message":"//p[text()='Please enter a valid GST']"},
+        {"input":"SDFDFSD","message":"//p[text()='Please enter a valid GST']"},
+        {"input":"#$%@#%","message":"//p[text()='Please enter a valid GST']"},
+        {"input":"34234233","message":"//p[text()='Please enter a valid GST']"},
+        {"input":"  ","message":"//p[text()='GST is required']"},
+        {"input":"22ABCDE1234F1Z5","message":"//p[text()='Please Upload GST File']"}
+    ],
+    "pan":[
+        {"input":"","message":"//p[text()='PAN is required']"},
+        {"input":"ABCDE1234F","message":""},
+        {"input":"PLMNO9876Z","message":""},
+        {"input":"AB1234F","message":"//p[text()='Please enter valid PAN']"},
+        {"input":"ABCDEFGHIJ","message":"//p[text()='Please enter valid PAN']"},
+        {"input":"32423432","message":"//p[text()='Please enter valid PAN']"},
+        {"input":"#$%@#%","message":"//p[text()='Please enter valid PAN']"},
+        {"input":"12345ABCDE","message":"//p[text()='Please enter valid PAN']"},
+        {"input":"  ","message":"//p[text()='PAN is required']"}
+    ],
+     "gstFileUpload":[
+        {"path":"Document/Book1.csv","validation":"//p[text()='Upload only Pdf']"},
+        {"path":"Document/valid holiday.xls","validation":"//p[text()='Upload only Pdf']"},
+        {"path":"Document/Works.docx","validation":"//p[text()='Upload only Pdf']"},
+        {"path":"Document/sample.png","validation":"//p[text()='Upload only Pdf']"},
+        {"path":"Document/10 mb file.pdf","validation":"//p[text()='Upload file under 1 MB']"},
+        {"path":"Document/5mbb.pdf","validation":"//p[text()='Upload file under 1 MB']"},
+        {"path":"Document/3mb.pdf","validation":"//p[text()='Upload file under 1 MB']"}
+        
+    ],
+    "coiFileUpload":[
+        {"path":"","validation":""},
+        {"path":"","validation":""},
+        {"path":"","validation":""},
+        {"path":"","validation":""},
+        {"path":"","validation":""}
+    ],
+
+    "sp_company":[
+        {"input":"  ","message":"Service Provider name is required"},
+        {"input":"$%^$^&$%&","message":"Only alphabets are allowed"},
+        {"input":"395238753","message":"Only alphabets are allowed"},
+        {"input":"Branced","message":""}             
+    ],
+    "sp_imageUpload":[
+        {"path":"","validation":""},
+        {"path":"","validation":""},
+        {"path":"","validation":""},
+        {"path":"","validation":""},
+        {"path":"","validation":""}
+    ],
+    "sp_l_b_h":[
+        {"input":"  ","message":"Service Provider name is required"},
+        {"input":"$%^$^&$%&","message":"Only alphabets are allowed"},
+        {"input":"395238753","message":"Only alphabets are allowed"},
+        {"input":"2.","message":""},
+        {"input":"-33","message":""},
+        {"input":".","message":""},
+        {"input":"0","message":""},
+        {"input":"0.","message":""},
+        {"input":"0.0","message":""},
+        {"input":"5.5","message":""},
+        {"input":"2.44","message":""},
+        {"input":"23.434","message":""},
+        {"input":"0.1","message":""},
+        {"input":"9999.99","message":""}
+    ],
+    "coun_name":[
+        {"input":"  ","message":"//span[text()='Country Name is required']"},
+        {"input":"$%^$^&$%&","message":"//span[text()='Country Name should be letters']"},
+        {"input":"395238753","message":"//span[text()='Country Name should be letters']"}
+    ],
+     "coun_code":[
+        {"input":"  ","message":"//span[text()='Country Code is required']"},
+        {"input":"$%^$^&$%&","message":"//span[text()='Country Code should be letters']"},
+        {"input":"395238753","message":"//span[text()='Country Code should be letters']"}
+    ],
+     "coun_currency":[
+        {"input":"  ","message":"//span[text()='Currency is required']"},
+        {"input":"$%^$^&$%&","message":"//span[text()='Only Alphabets are allowed']"},
+        {"input":"395238753","message":"//span[text()='Only Alphabets are allowed']"}
+    ],
+     "coun_exchange":[
+        {"input":"  ","message":"//span[text()='Exchange Rate is required']"},
+        {"input":"$%^$^&$%&","message":"//span[text()='Only Numbers and Decimals are allowed']"},
+        {"input":"njcnjss","message":"//span[text()='Only Numbers and Decimals are allowed']"},
+        {"input":"2.","message":"//span[text()='Only Numbers and Decimals are allowed']"},
+        {"input":"-33","message":"//span[text()='Only Numbers and Decimals are allowed']"},
+        {"input":".","message":"//span[text()='Only Numbers and Decimals are allowed']"},
+        {"input":"0","message":"//span[text()=\"Rate can't be zero\"]"},
+        {"input":"0.","message":"//span[text()=\"Rate can't be zero\"]"},
+        {"input":"0.0","message":"//span[text()=\"Rate can't be zero\"]"},
+        {"input":"5.5","message":""},
+        {"input":"2.44","message":""},
+        {"input":"23.434","message":""},
+        {"input":"0.1","message":""},
+        {"input":"9999.99","message":""}
+    ],
+    
+     "coun_phonecode":[
+        {"input":"  ","message":"//span[text()='Phone Code is required']"},
+        {"input":"$%^$^&$%&","message":"//span[text()='Invalid Format']"},
+        {"input":"395238753","message":"//span[text()='Invalid Format']"},
+        {"input":"dsfdsfdsg","message":"//span[text()='Invalid Format']"},
+        {"input":"395238753","message":"//span[text()='Invalid Format']"},
+        {"input":"=34","message":"//span[text()='Invalid Format']"},
+        {"input":"+23.32","message":"//span[text()='Invalid Format']"},
+        {"input":"23.32","message":"//span[text()='Invalid Format']"},
+        {"input":"3952dfds#@$","message":"//span[text()='Invalid Format']"}
+    ],
+    
+     "coun_numberformat":[
+        {"input":"  ","message":"//span[text()='Phone Number Format is required']"},
+        {"input":"$%^$^&$%&","message":"//span[text()='Only Numbers are allowed']"},
+        {"input":"sdfsdfsdg","message":"//span[text()='Only Numbers are allowed']"}
+    ]
+
+    
+
+
+}

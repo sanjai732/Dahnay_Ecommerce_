@@ -6,7 +6,7 @@
 4. data -> this json file contains all username, password and all values 
 
 
-### NEW FRAMEWROK STRUCTURE
+### NEW FRAMEWORK STRUCTURE
 
 1. pages-> basepage -> all common functions will be here
         loginpage-> import basepage from pages
@@ -23,3 +23,20 @@
                      import elements from page object
 5. data -> all values will contain and throw new error messages
 6. config.js -> all url's and important information 
+
+
+## Modules covered in automation test scripts
+
+1. Login  
+2. Register  
+3. Forgot Password
+4. Service provider
+5. Country
+6. Ports
+7. CFS
+8. Holiday
+9. Distribution Centre
+10. Rates
+11. Schedule
+12. Internal
+13. Transaction 

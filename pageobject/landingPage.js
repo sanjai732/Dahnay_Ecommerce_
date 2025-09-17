@@ -8,4 +8,6 @@ export const invalidToastMessage = "//div[text()='User Name or Password is Inval
 export const usernameValidation = "//p[text()='Enter valid email']"
 export const usernameRequired = "//p[text()='Email is required']"
 export const passwordRequired = "//p[text()='Password is required']"
-export const errorMessage = "unable to locate element"
+export const errorMessage = "Unable to Locate Element in Login Page when login with Invalid Username"
+export const popupMessage = "//h2[text()='User Already Logged In']"
+export const yes = "//button[text()='Yes']"
