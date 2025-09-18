@@ -1,0 +1,12 @@
+export const userMenu =''
+export const userNew =''
+export const userApproved =''
+export const userRevalidate =''
+export const userReject =''
+export const userDelete =''
+export const userSearch =''
+export const userBtnApprove =''
+export const userBtnRevalidate =''
+export const userBtnReject =''
+export const userBtnDelete =''
+

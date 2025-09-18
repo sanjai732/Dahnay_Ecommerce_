@@ -1,4 +1,5 @@
 // check url and title for all modules
+export const serviceProviderTitle = ''
 export const service_provider_menu = "text=Service Providers"
 export const service_provider_norecords = 'text=No records found'
 export const add_service_provider = "text=Add Service Provider"

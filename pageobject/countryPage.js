@@ -1,3 +1,4 @@
+export const countryTitle = ""
 export const country_menu = "//a[text()='Country']"
 export const country_search = "//input[@placeholder='Search Country']"
 export const country_norows = "//div[text()='No rows']"

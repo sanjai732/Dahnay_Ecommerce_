@@ -180,8 +180,35 @@
         {"input":"  ","message":"//span[text()='Phone Number Format is required']"},
         {"input":"$%^$^&$%&","message":"//span[text()='Only Numbers are allowed']"},
         {"input":"sdfsdfsdg","message":"//span[text()='Only Numbers are allowed']"}
+    ],
+    "portname":[
+        {"input":"", "message":"//span[text()='Port Name is required']"},
+        {"input":"  ", "message":"//span[text()='Port Name is required']"},
+        {"input":"3245643534", "message":"//span[text()='Only Alphabets are allowed']"},
+        {"input":"*&%^&%#&", "message":"//span[text()='Only Alphabets are allowed']"},
+        {"input":"normal", "message":""},
+        {"input":"new york", "message":""}
+    ],
+    "portcode":[
+        {"input":"", "message":"//span[text()='Port Code is required']"},
+        {"input":"  ", "message":"//span[text()='Port Code is required']"},
+        {"input":"324", "message":"//span[text()='Should have atleast 5 characters']"},
+        {"input":"asd", "message":"//span[text()='Should have atleast 5 characters']"},
+        {"input":"*&%^&%#&", "message":"//span[text()='Only Alphanumeric are allowed']"},
+        {"input":"usnyc", "message":""}
+    ],
+    "portcountry":"//span[text()='Country is required']",
+    "porttype":"//span[text()='Type is required']",
+    "portregion":"//span[text()='Region is required']",
+    "holidayPort":"//span[text()='Port code is required']",
+    "holidayDate":"//span[text()='Date is required']",
+    "holidayName":[
+        {"input":"","message":"//span[text()='Holiday name is required']"},
+        {"input":"  ","message":"//span[text()='Holiday name is required']"},
+        {"input":"234234234","message":"//span[text()='Only alphabets are allowed']"},
+        {"input":"#@$%$#$@%","message":"//span[text()='Only alphabets are allowed']"}
     ]
-
+    
     
 
 

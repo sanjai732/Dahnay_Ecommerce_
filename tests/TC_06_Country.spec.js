@@ -8,11 +8,13 @@
 import test from "../fixtures/fixture"
 
 test.describe('@country: Country Functionality',()=>{
-    test('@country_add: Add',async({loginpage, country})=>{
+    test.beforeEach(async({loginpage})=>{
         await test.step(`Logged in as Admin`,async()=>{
             await loginpage.OpenApp()
             await loginpage.adminLogin()
         })
+    })
+    test('@country_add: Add',async({country})=>{
         await test.step(`Per Field validation and added country`,async()=>{
             await country.Country_PerFieldValidation()
             await country.Add_Country()

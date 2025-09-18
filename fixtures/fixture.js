@@ -3,6 +3,9 @@ import LoginPage from "../pages/login"
 import RegisterPage from "../pages/register"
 import Service_Provider from "../pages/service_provider"
 import Country from "../pages/country"
+import Port from "../pages/port"
+import User from "../pages/user_management"
+import Holiday from "../pages/holiday"
 
 const test = fixture.extend({
     loginpage: async ({page},use)=>{
@@ -16,6 +19,15 @@ const test = fixture.extend({
     },
     country: async({page},use)=>{
         await use(new Country(page))
+    },
+    port: async ({page}, use)=>{
+        await use (new Port(page))
+    },
+    user: async ({page}, use)=>{
+        await use (new User(page))
+    },
+    holiday: async({page},use)=>{
+        await use(new Holiday(page))
     }
 })
 export default test;

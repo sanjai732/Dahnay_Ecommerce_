@@ -3,6 +3,7 @@ Test Cases for registration
 get the otp page details and stored in file
 remove element in bl and trade license
 already added gst and pan
+rejected mail id will allow or not in registration
 */
 import test from "../fixtures/fixture.js"
 

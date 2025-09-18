@@ -20,7 +20,8 @@ import {
     service_provider_delete_toast_message,
     service_provider_add_error,
     service_provider_error,
-    service_provider_companyname_unique
+    service_provider_companyname_unique,
+    service_provider_deletepopup_message
 } from "../pageobject/serviceProviderPage"
 import { sp_companyName, sp_image, heigth, width, length } from "../data/value.json"
 import { sp_company, sp_imageUpload, sp_l_b_h } from "../data/validation.json"
@@ -86,3 +87,5 @@ class Service_Provider extends BasePage {
 
 }
 export default Service_Provider
+
+//click submit button at first
