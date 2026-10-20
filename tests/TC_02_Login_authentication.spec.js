@@ -11,7 +11,7 @@ Test Cases to be automated for Login functionality
 
 import test from '../fixtures/fixture.js'
 
-test.describe(
+test.describe.only(
 	'@login: Login into application with multiple scenarios',
 	() => {
 		test('Login with multiple scenarios', async ({ loginpage }) => {

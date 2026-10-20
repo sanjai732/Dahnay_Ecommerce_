@@ -8,7 +8,6 @@ import {
     country_code,
     country_currency,
     country_exchangerate,
-    country_phonecode,
     country_numberformat,
     country_timezone,
     country_add_toastmessage,
@@ -30,7 +29,6 @@ import {
     coun_code,
     coun_currency,
     coun_exchange,
-    coun_phonecode,
     coun_numberformat
 } from "../data/validation.json"
 import { errorMessage } from "../pageobject/landingPage"
@@ -46,7 +44,6 @@ class Country extends BasePage {
         await this.waitAndFill(country_code, data.country_code)
         await this.waitAndFill(country_currency, data.country_currency)
         await this.waitAndFill(country_exchangerate, data.country_exchangerate)
-        await this.waitAndFill(country_phonecode, data.country_phonecode)
         await this.waitAndFill(country_numberformat, data.country_numberformat)
         await this.selectValueFromDropdown(country_timezone, data.country_timezone)
         await this.waitAndClick(country_save)
@@ -59,7 +56,6 @@ class Country extends BasePage {
         await this.waitAndFill(country_code, data.country_code)
         await this.waitAndFill(country_currency, data.country_currency)
         await this.waitAndFill(country_exchangerate, data.country_exchangerate)
-        await this.waitAndFill(country_phonecode, data.country_phonecode)
         await this.waitAndFill(country_numberformat, data.country_numberformat)
         await this.selectValueFromDropdown(country_timezone, data.country_timezone)
         await this.waitAndClick(country_save)
@@ -72,7 +68,6 @@ class Country extends BasePage {
         await this.validatePerField(country_code, coun_code)
         await this.validatePerField(country_currency, coun_currency)
         await this.validatePerField(country_exchangerate, coun_exchange)
-        await this.validatePerField(country_phonecode, coun_phonecode)
         await this.validatePerField(country_numberformat, coun_numberformat)
     }
     async Edit_Country() {
@@ -84,12 +79,10 @@ class Country extends BasePage {
         await this.validatePerField(country_code, coun_code)
         await this.validatePerField(country_currency, coun_currency)
         await this.validatePerField(country_exchangerate, coun_exchange)
-        await this.validatePerField(country_phonecode, coun_phonecode)
         await this.validatePerField(country_numberformat, coun_numberformat)
         await this.waitAndFill(country_code, data.country_code)
         await this.waitAndFill(country_currency, data.country_currency)
         await this.waitAndFill(country_exchangerate, data.country_exchangerate)
-        await this.waitAndFill(country_phonecode, data.country_phonecode)
         await this.waitAndFill(country_numberformat, data.country_numberformat)
         await this.selectValueFromDropdown(country_timezone, data.country_timezone)
         await this.waitAndClick(country_save)

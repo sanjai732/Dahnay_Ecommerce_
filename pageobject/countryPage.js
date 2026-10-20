@@ -1,24 +1,25 @@
-export const countryTitle = ""
-export const country_menu = "//a[text()='Country']"
-export const country_search = "//input[@placeholder='Search Country']"
-export const country_norows = "//div[text()='No rows']"
-export const country_add = "#addcountry"
-export const country_name = "#name"
-export const country_code = "#code"
-export const country_currency = "#currency"
-export const country_exchangerate = "#exchangeRate"
-export const country_phonecode = "#phoneCode"
-export const country_numberformat = "#numberFormat"
-export const country_timezone = "#timezone"
+export const countryTitle = "//h3[text()='Country']"
+export const country_menu = "//span[text()='Country']"
+export const country_search = "//label[text()='Search Country']"
+export const country_add = "//button[text()='Add Country']"
+export const country_name = "input[placeholder='Enter Country Name']"
+export const country_code = "input[placeholder='Enter Country Code']"
+export const country_currency = "input[placeholder='Enter Currency']"
+export const country_exchangerate = "input[placeholder='Enter Exchange Rate']"
+export const country_numberformat = "input[placeholder='Enter Phone Number Format']"
+export const country_timezone = "select[name='timezone']"
 export const country_save = "//button[text()='Save Country']"
-export const country_add_toastmessage = ".addToastMessage"
+// update country button need to add same save button can't use everywhere
+export const country_add_toastmessage = "//div[normalize-space(text())='Country created successfully']"
 export const country_edit_toastmessage = ".editToastMessage"
 export const country_delete_toastmessage = ".deleteToastMessage"
-export const country_deletepopup_message = 'text=are you sure to delete this'
-export const country_yesdelete = 'button:has-text("Yes, Delete")'
-export const country_nodelete = 'button:has-text("No, Delete")'
-export const country_error = 'Unable to Locate Element in Country'
-export const country_thirdDot = ''
-export const country_edit = 'text=Edit'
-export const country_delete = 'text=Delete'
-export const country_unique = '.duplicate-country-name-message'
+export const country_addpopup_message = "//div[text()='Are you sure that you want to add this country with the given data?']"
+export const country_editpopup_message = "//div[normalize-space(text())='Country updated successfully!']"
+export const country_deletepopup_message = "//div[normalize-space(text())='Country deleted successfully!']"
+export const country_yesdelete = "//button[text()='Yes']"
+export const country_nodelete = "//button[text()='No']"
+export const country_error = "Unable to Locate Element in Country"
+export const country_thirdDot = "//div[@aria-rowspan='1']//button[1]"
+export const country_edit = "//li[text()='Edit']"
+export const country_delete = "//li[text()='Delete']"
+export const country_unique = ""

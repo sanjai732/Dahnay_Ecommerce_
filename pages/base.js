@@ -28,10 +28,12 @@ class BasePage {
 	async waitAndClick(selector) {
 		return await this.page.locator(selector).nth(0).click()
 	}
+	async Click_getByText(selector){
+		return await this.page.getByText(selector).click()
+	}
 	async waitAndHardClick(selector) {
 		return await this.page.click(selector, { force: true })
 	}
-
 	async waitAndFill(selector, text) {
 		return await this.page.fill(selector, text)
 	}

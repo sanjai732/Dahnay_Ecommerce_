@@ -51,9 +51,9 @@ class Holiday extends BasePage {
         await this.waitAndClick(page.holidayThirdDot)
         await this.waitAndClick(page.holidayDelete)
         await this.isElementVisible(page.holidayDeletePopUpMessage, page.holidayErrorMessage)
-        await this.waitAndClick(page.holidayDeleteNo)
+        await this.waitAndClick(page.holidaySaveNo)
         await this.waitAndClick(page.holidayDelete)
-        await this.waitAndClick(page.holidayDeleteYes)
+        await this.waitAndClick(page.holidaySaveyes)
         await this.isElementVisible(page.holidayDeleteToastMessage, page.holidayErrorMessage)
     }
 }

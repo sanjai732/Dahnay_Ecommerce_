@@ -1,12 +1,4 @@
-/**
- * Test Case for User Management
- * 
- * new -> approve, revalidate and reject btn
- * approve -> delete btn
- * revalidate -> details show
- * reject -> details
- * delete -> details
- */
+import test from '../fixtures/fixture.js'
 
 test.describe('User Management Test Suite', () => {
     test.beforeEach(async({loginpage})=>{

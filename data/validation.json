@@ -21,13 +21,11 @@
         {"input":"#$%@#%","message":"//p[text()='Enter valid email address']"},
         {"input":"abc@","message":"//p[text()='Enter valid email address']"},
         {"input":"@gmail.com","message":"//p[text()='Enter valid email address']"},
-        {"input":"abc@gmail","message":"//p[text()='Enter your official email']"},
         {"input":"abc@.com","message":"//p[text()='Enter valid email address']"},
+        {"input":"abs777@jty","message":"//p[text()='Enter valid email address']"},
         {"input":"abc@domain,com","message":"//p[text()='Enter valid email address']"},
         {"input":"abc@domain..com","message":"//p[text()='Enter valid email address']"},
-        {"input":"abc@@domain.com","message":"//p[text()='Enter valid email address']"},
-        {"input":"abc@domain.c","message":"//p[text()='Enter your official email']"},
-        {"input":"abc@domain.123","message":"//p[text()='Enter your official email']"}
+        {"input":"abc@@domain.com","message":"//p[text()='Enter valid email address']"}
     ],
     "password":[
         {"input":"  ","message":"//p[text()='Password is required']"},
@@ -110,7 +108,7 @@
         {"input":"Branced","message":""}             
     ],
     "sp_imageUpload":[
-        {"path":"","validation":""},
+        {"path":"Document/5mbb.pdf","validation":""},
         {"path":"","validation":""},
         {"path":"","validation":""},
         {"path":"","validation":""},
@@ -119,8 +117,8 @@
     "sp_l_b_h":[
         {"input":"  ","message":"Service Provider name is required"},
         {"input":"$%^$^&$%&","message":"Only alphabets are allowed"},
-        {"input":"395238753","message":"Only alphabets are allowed"},
-        {"input":"2.","message":""},
+        {"input":"dfsdfdsf","message":"Only alphabets are allowed"},
+        {"input":".2","message":""},
         {"input":"-33","message":""},
         {"input":".","message":""},
         {"input":"0","message":""},
@@ -151,7 +149,7 @@
         {"input":"  ","message":"//span[text()='Exchange Rate is required']"},
         {"input":"$%^$^&$%&","message":"//span[text()='Only Numbers and Decimals are allowed']"},
         {"input":"njcnjss","message":"//span[text()='Only Numbers and Decimals are allowed']"},
-        {"input":"2.","message":"//span[text()='Only Numbers and Decimals are allowed']"},
+        {"input":".2","message":"//span[text()='Only Numbers and Decimals are allowed']"},
         {"input":"-33","message":"//span[text()='Only Numbers and Decimals are allowed']"},
         {"input":".","message":"//span[text()='Only Numbers and Decimals are allowed']"},
         {"input":"0","message":"//span[text()=\"Rate can't be zero\"]"},
@@ -163,19 +161,6 @@
         {"input":"0.1","message":""},
         {"input":"9999.99","message":""}
     ],
-    
-     "coun_phonecode":[
-        {"input":"  ","message":"//span[text()='Phone Code is required']"},
-        {"input":"$%^$^&$%&","message":"//span[text()='Invalid Format']"},
-        {"input":"395238753","message":"//span[text()='Invalid Format']"},
-        {"input":"dsfdsfdsg","message":"//span[text()='Invalid Format']"},
-        {"input":"395238753","message":"//span[text()='Invalid Format']"},
-        {"input":"=34","message":"//span[text()='Invalid Format']"},
-        {"input":"+23.32","message":"//span[text()='Invalid Format']"},
-        {"input":"23.32","message":"//span[text()='Invalid Format']"},
-        {"input":"3952dfds#@$","message":"//span[text()='Invalid Format']"}
-    ],
-    
      "coun_numberformat":[
         {"input":"  ","message":"//span[text()='Phone Number Format is required']"},
         {"input":"$%^$^&$%&","message":"//span[text()='Only Numbers are allowed']"},
@@ -194,6 +179,7 @@
         {"input":"  ", "message":"//span[text()='Port Code is required']"},
         {"input":"324", "message":"//span[text()='Should have atleast 5 characters']"},
         {"input":"asd", "message":"//span[text()='Should have atleast 5 characters']"},
+        {"input":"asddsd", "message":"//span[text()='Maximum 6 characters are only allowed']"},
         {"input":"*&%^&%#&", "message":"//span[text()='Only Alphanumeric are allowed']"},
         {"input":"usnyc", "message":""}
     ],

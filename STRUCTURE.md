@@ -30,12 +30,12 @@
 1. Login  
 2. Register  
 3. Forgot Password
-4. Service provider
-5. Country
-6. Ports
-7. CFS
-8. Holiday
-9. Distribution Centre
+4. Service provider - name unique
+5. Country - country name and code
+6. Ports -  in test file 
+7. CFS - 
+8. Holiday - no unique
+9. Distribution Centre - code unique
 10. Rates
 11. Schedule
 12. Internal
